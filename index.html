@@ -1,0 +1,25 @@
+<!Doctype html>
+<html xmlns=http://www.w3.org/1999/xhtml>
+<head>
+<meta http-equiv=Content-Type content="text/html;charset=utf-8">
+<title>html5 plane</title>
+</head>
+<body onkeydown="return OnKeyDown(event)" onkeyup="return OnKeyUp(event)" onmouseup="return OnMouseUp(event)">
+<div id="GameDiv" style="border:solid black 1px;width:480px;height:640px;margin:0 auto;">
+<canvas onmousemove="return OnMouseMove(event)" oncontextmenu="return false" onmousedown="return OnMouseDown(event)" id="MainCanvas" height=640 width=480>Your web browser is not support html5 canvas</canvas>
+</div>
+
+<audio id="mp3bullet" src="bullet.mp3"></audio>
+<audio id="mp3explosion" src="explosion.mp3"></audio>
+<audio id="oggbullet" src="bullet.ogg"></audio>
+<audio id="oggexplosion" src="explosion.ogg"></audio>
+
+<script src="GameObject.js"></script>
+<script src="plane.js"></script>
+<div style="width:480px;height:40px;margin:0 auto;">
+	<strong>Mouse: left button fire</strong>
+	<br>
+	<strong>Keyboard: 'a' button fire</strong>
+</div>
+</body>
+</html>
